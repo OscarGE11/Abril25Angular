@@ -1,0 +1,9 @@
+@for (item of productos; track $index) {
+    <p>Id producto==> {{item.idProducto}}</p>
+    <p>Nombre producto ==> {{item.nombreProducto}}</p>
+    <p>Precio unitario ==> {{item.precioUnitario}}</p>
+    <p>Unidades en stock ==> {{item.unidadesStock}}</p>
+    <p>Id categoría ==> {{item.idCategoria}}</p>
+    <button (click)="borrarProducto(item.idProducto)">Borrar</button>
+    <p>--------------------------------------------</p>
+}
